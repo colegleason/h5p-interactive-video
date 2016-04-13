@@ -312,7 +312,8 @@ H5P.InteractiveVideoInteraction = (function ($, EventDispatcher) {
       }
 
       $outer = $('<div>', {
-        'class': 'h5p-interaction-outer'
+        'class': 'h5p-interaction-outer',
+        'role':'alert',
       }).appendTo($interaction);
 
       $inner = $('<div/>', {
