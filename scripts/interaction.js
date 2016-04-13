@@ -25,7 +25,9 @@ H5P.InteractiveVideoInteraction = (function ($, EventDispatcher) {
 
     // Find library name and title
     var library = action.library.split(' ')[0];
-    var title = (action.params.contentName !== undefined ? action.params.contentName : player.l10n.interaction);
+    var label = $(parameters.label).text();
+    var title = (action.params.contentName !== undefined ? action.params.contentName :
+                 label !== undefined ? label : player.l10n.interaction);
 
     // Detect custom html class for interaction.
     var classes = parameters.className;
