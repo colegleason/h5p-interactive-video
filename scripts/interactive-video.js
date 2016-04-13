@@ -723,6 +723,7 @@ H5P.InteractiveVideo = (function ($, EventDispatcher, DragNBar, Interaction) {
         self.video.pause();
       }
     });
+    self.controls.$play.attr('accessKey', 'p');
 
     /**
      * Wraps a specifc handler to do some generic operations each time the handler is triggered.
